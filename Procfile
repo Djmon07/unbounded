@@ -1,1 +1,1 @@
-web: gunicorn "unbound:create_app()"
+web: gunicorn "unbounded:create_app()"
