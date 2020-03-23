@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 
 setuptools.setup(
-    name="name"
+    name="unbounded"
     version="0.0.1",
     author="Daniel",
     author_email="djmonwork@gmail.com",
