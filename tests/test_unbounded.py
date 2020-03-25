@@ -1,3 +1,4 @@
+import pytest
 from unbounded import create_app
 
 def test_config():
