@@ -21,7 +21,7 @@ def create_app(test_config=None):
         pass
 
     @app.route('/')
-    def hello():
+    def index():
         return 'index.html'
 
     from . import db
