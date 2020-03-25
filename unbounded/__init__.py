@@ -22,7 +22,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def index():
-        return 'index.html'
+        return render_template('index.html')
 
     from . import db
     db.init_app(app)
