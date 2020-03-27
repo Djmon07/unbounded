@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<title>{% block title %}{% endblock %} - unbounded</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<html>
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title>{% block title %}Riddled Road{% endblock %}</title>
 
-<nav>
-  <h1>Riddled Road</h1>
-  <ul>
-    <li><a href="#">Register</a>
-    <li><a href="#">Log In</a>
-  </ul>
-</nav>
+  </head>
+  <body>
+    <h1>Riddled Road</h1>
 
-<section class="content">
-
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-
-  {% for message in get_flashed_messages() %}
-  <div class="flash">{{ message }}</div>
-  {% endfor %}
-
-  {% block content %}{% endblock %}
-</section>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

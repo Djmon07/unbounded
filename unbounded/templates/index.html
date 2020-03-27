@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Riddled Road your fate awaits!{% endblock %}</h1>
-{% endblock %}
+
+{% block title %}Riddled Road{% endblock %}
 
 {% block content %}
-  <p>hello word!<p>
+
+  <nav>
+    <a href="{{ url_for('scenes.beginning') }}">Play Game</a>
+  </nav>
+
+  <p>A Road of challenges you will face ahead! Are you up for the task?</p>
+  
 {% endblock %}

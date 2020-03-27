@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p class='riddle'>{{ scene['riddle'] }}</p>
+
+<form method="post">
+<label for="riddle">Which road?</label>
+<input type="text" name="riddle" id="riddle" />
+<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
